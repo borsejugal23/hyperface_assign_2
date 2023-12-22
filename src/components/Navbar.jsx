@@ -1,3 +1,4 @@
+import Spinner from "./Spinner"
 
 
 const Navbar=()=>{
@@ -17,32 +18,35 @@ const Navbar=()=>{
     </div>
  </div>
  
- <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop:"150px", marginLeft:"500px"}}>
-  <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-    <input
-      type="text"
-      placeholder="Entry1, Entry2, ..."
-      style={{
-        padding: '8px',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
-        outline: 'none',
-      }}
-    />
-    <button
-      style={{
-        padding: '8px 12px',
-        backgroundColor: '#007bff',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '4px',
-        cursor: 'pointer',
-      }}
-    >
-      Add
-    </button>
+ 
+  <div style={{ display: 'flex', alignItems: 'center', gap: '5px' ,justifyContent:"space-between",width:"60%",margin:"auto"}}>
+      <input
+        type="text"
+        placeholder="Entry1, Entry2, ..."
+        style={{
+          padding: '8px',
+          border: '1px solid #ccc',
+          borderRadius: '4px',
+          outline: 'none',
+          marginBottom:"400px"
+        }}
+      />
+      <button
+        style={{
+          padding: '8px 12px',
+          backgroundColor: '#007bff',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '4px',
+          cursor: 'pointer',
+          marginBottom:"400px"
+
+        }}
+      >
+        Add
+      </button>
+      <Spinner/>
   </div>
-</div>
 
  </div>
 }
